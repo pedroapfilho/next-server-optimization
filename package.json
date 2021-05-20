@@ -1,0 +1,16 @@
+{
+  "name": "next-server-optimization",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:pedroapfilho/next-server-optimization.git",
+  "author": "Pedro Filho <pedro@filho.me>",
+  "license": "MIT",
+  "scripts": {
+    "start": "mdx-deck deck.mdx",
+    "build": "mdx-deck build deck.mdx"
+  },
+  "devDependencies": {
+    "mdx-deck": "^4.1.1",
+    "mdx-deck-theme-awesomeness": "^1.2.7"
+  }
+}
