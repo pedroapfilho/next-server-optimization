@@ -14,7 +14,7 @@ export const theme = awesomeTheme;
 
 </Footer>
 
-# Next.js Server Optimization
+# SSR Optimization
 
 ---
 
@@ -32,6 +32,18 @@ export const theme = awesomeTheme;
 
 ---
 
+# What is SSR?
+
+---
+
+## Generate on the server and render on the browser
+
+---
+
+# What does it give you?
+
+---
+
 ## Performance 🔥
 
 ---
@@ -40,8 +52,88 @@ export const theme = awesomeTheme;
 
 ---
 
-# And a curse ☠️
+# But it's also a curse ☠️
 
 ---
 
---
+# Let's see why
+
+---
+
+# Metrics for Blockchain.com
+
+---
+
+### Main source of blockchain transactions in the web
+
+### 10M+ page views per month
+
+### 25 thick servers running the application (with CPU going to the sky)
+
+---
+
+# /explorer
+
+---
+
+### Everything on the server
+
+### Computation heavy data (at least for JS)
+
+---
+
+# How we fixed it?
+
+---
+
+### Fastify for the win (we had a custom server)
+
+### Made the application stateless (no session memory)
+
+### Cluster mode with multiple instances
+
+### Client-sided what we could (without any "crawlable" data removed)
+
+---
+
+# Results
+
+---
+
+import i from "./cto-message-after.jpeg";
+
+<img
+  style={{
+    width: "500px",
+    height: "auto",
+  }}
+  src={i}
+/>
+
+---
+
+### Improved our performance in 90%+
+
+### Decreased the amount from 25 servers to 4
+
+---
+
+# Tips
+
+---
+
+### Maybe use serverless, if you don't want to deal with all this
+
+### Don't use all your cores, it'll be unstable
+
+---
+
+## github.com/pedroapfilho
+
+## twitter.com/pedrofilhome
+
+---
+
+# That's all folks 👋
+
+## Hit me up with some questions!
